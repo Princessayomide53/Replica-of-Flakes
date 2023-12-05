@@ -19,12 +19,28 @@ body {
   transform: rotate(-36.156deg);
 }
 .Ellipse3 {
-  width: 20.65625rem;
-  height: 13.99356rem;
+  width: 17.97775rem;
+  height: 17.7005rem;
   transform: rotate(-36.156deg);
-  border-radius: 20.65625rem;
+  border-radius: 17.97775rem;
   background: rgba(12, 56, 98, 0.5);
   filter: blur(150px);
+}
+.Ellipse4 {
+  width: 22.98288rem;
+  height: 25.20706rem;
+  transform: rotate(38.213deg);
+  border-radius: 25.20706rem;
+  background: rgba(99, 63, 211, 0.2);
+  filter: blur(150px);
+}
+
+.bgs {
+  width: 18.3125rem;
+  height: 2.1875rem;
+  border-radius: 18.3125rem;
+  background: #b410ff;
+  filter: blur(100px);
 }
 
 .text-white li:hover {
