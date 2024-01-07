@@ -6,21 +6,17 @@ import Ellipse2 from "../../Assets/Ellipse2.png";
 const NavBar = () => {
   return (
     <section className="h-[8rem] bg-[#040013] relative z-50">
-      <nav className="max-w-[80rem] mx-auto flex justify-between py-[4.45rem] ">
-        <ul className="text-white flex space-x-[2.56rem] z-50">
-          <li className="hover:text-[#C979CF] text-[1.125rem] font-normal leading-[1rem] tracking-[0.00563rem]">
-            Home
-          </li>
-          <li className="hover:text-[#C979CF] text-[1.125rem] font-normal leading-[1rem] tracking-[0.00563rem]">
-            Projects
-          </li>
-        </ul>
+      <nav className="max-w-[75rem] mx-auto flex justify-between py-[4.45rem] ">
         <img
           src={Logo}
           alt=""
           className="object-cover w-[8.375rem] h-[2.82369rem] -mt-[1.01rem]"
         />
         <ul className="text-white flex space-x-[2.56rem] z-50">
+          <li className="hover:text-[#C979CF] text-[1.125rem] font-normal leading-[1rem] tracking-[0.00563rem]">
+            Home
+          </li>
+
           <li className="hover:text-[#C979CF] text-[1.125rem] font-normal leading-[1rem] tracking-[0.00563rem]">
             About
           </li>

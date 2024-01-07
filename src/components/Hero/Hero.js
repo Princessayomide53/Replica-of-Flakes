@@ -2,7 +2,7 @@ import React from "react";
 import Ellipse4 from "../../Assets/Ellipse4.png";
 import Ellipse5 from "../../Assets/Ellipse5.png";
 // import Ellipse6 from "../../Assets/Ellipse6.png";
-import button from "../../Assets/button.png";
+// import button from "../../Assets/button.png";
 import Ellipse7 from "../../Assets/Ellipse7.png";
 import magic from "../../Assets/magic.png";
 
@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="h-[64rem] bg-[#040013]">
+    <section className="h-[72rem] bg-[#040013]">
       <header>
         {" "}
         <div className="pt-[2.75rem]">
@@ -107,11 +107,17 @@ const Hero = () => {
               className="absolute -top-[18rem] right-5 Ellipse4"
             />
           </div>
-          <div className="relative pt-[4.5rem]">
-            <button className="absolute inset-0 top-1/2 left-[43%] transform bg-gradient-to-b from-[#040013] via-[#040013] to-[#37024e] text-white border-[1px] border-[#A57F98] w-[12.5rem] h-[3.125rem] rounded-[1.875rem]">
+          <div className="pt-[4.5rem] flex justify-center">
+            <button className="btn text-white border-[1px] border-[#A57F98]  ">
               Download my CV
             </button>
           </div>
+          <div className="w-[40rem] h-[10.0625rem] mt-[1.75rem]s bg-[#040013]  mx-auto">
+            <div className="w-[40rem] h-12 mt-[7.19rem] shadow-xl shadow-[#C979CF]/50 "></div>
+          </div>
+          <p className="text-center pb-[10.01rem] text-[3rem] font-medium leading-normal text-white/80">
+            Featured Projects
+          </p>
         </div>
       </header>
     </section>
