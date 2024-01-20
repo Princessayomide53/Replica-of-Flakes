@@ -1,16 +1,13 @@
 import "./App.css";
-import Hero from "./components/Hero/Hero";
-import Data from "./components/Main/Data";
-import NavBar from "./components/NavBar/NavBar";
+import Home from "./components/Home/Home";
+
 // import Preloader from "./components/Preloader/Preloader";
 
 function App() {
   return (
     <div className="overflow-hidden">
       {/* <Preloader /> */}
-      <NavBar />
-      <Hero />
-      <Data />
+      <Home />
     </div>
   );
 }

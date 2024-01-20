@@ -1,9 +1,9 @@
 import React from "react";
 import Main from "./Main";
-import Lassra from "../../Assets/Lassra.png";
-import Links from "../../Assets/Links.png";
-import Quickfill from "../../Assets/Quickfill.png";
-import Eppcheck from "../../Assets/Eppcheck.png";
+import Lassra from "../../../Assets/Lassra.png";
+import Links from "../../../Assets/Links.png";
+import Quickfill from "../../../Assets/Quickfill.png";
+import Eppcheck from "../../../Assets/Eppcheck.png";
 
 const dummy_Data = [
   {

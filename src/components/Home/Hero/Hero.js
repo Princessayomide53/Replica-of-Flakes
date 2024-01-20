@@ -1,12 +1,12 @@
 import React from "react";
-import Ellipse4 from "../../Assets/Ellipse4.png";
-import Ellipse5 from "../../Assets/Ellipse5.png";
+import Ellipse4 from "../../../Assets/Ellipse4.png";
+import Ellipse5 from "../../../Assets/Ellipse5.png";
 // import Ellipse6 from "../../Assets/Ellipse6.png";
 // import button from "../../Assets/button.png";
-import Ellipse7 from "../../Assets/Ellipse7.png";
-import magic from "../../Assets/magic.png";
+import Ellipse7 from "../../../Assets/Ellipse7.png";
+import magic from "../../../Assets/magic.png";
 
-import picture from "../../Assets/picture.png";
+import picture from "../../../Assets/picture.png";
 
 const Hero = () => {
   const blobStyle = {

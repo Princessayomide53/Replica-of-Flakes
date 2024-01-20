@@ -1,13 +1,13 @@
 import React from "react";
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 import { IoIosArrowForward } from "react-icons/io";
-import Ellipsep from "../../Assets/Ellipsep.png";
+import Ellipsep from "../../../Assets/Ellipsep.png";
 
 const Main = (props) => {
   console.log("items", props.item);
   return (
     <section className="bg-[#040013]  ">
-      <div className="max-w-[75rem] mx-auto grid grid-cols-2 place-items-center gap-[6.62rem] pb-[13.37rem]">
+      <div className="max-w-[75rem] mx-auto grid grid-cols-2 place-items-center gap-[6.62rem] pb-[10.37rem]">
         {props.item?.map((items, index) => (
           <Card className="w-[34.1875rem] h-[45.5875rem] card " key={items.id}>
             <div>
