@@ -24,7 +24,7 @@ const Main = (props) => {
                 </p>
               </div>
               <div className="flex justify-between px-10">
-                <h2 className="text-white text-[1.5rem] font-semibold">
+                <h2 className="text-white text text-[1.5rem] font-semibold">
                   {items.name}
                 </h2>
                 <div className="p-3 border-2 border-white rounded-full -mt-4">

@@ -8,13 +8,15 @@ const NavBar = () => {
   const location = useLocation();
 
   return (
-    <section className="h-[8rem] bg-[#040013] relative z-50">
-      <nav className="max-w-[75rem] mx-auto flex justify-between py-[4.45rem] ">
-        <img
-          src={Logo}
-          alt=""
-          className="object-cover w-[8.375rem] h-[2.82369rem] -mt-[1.01rem]"
-        />
+    <section className="h-[8rem] bg-[#040013] fixed w-full left-0 top-0 z-50">
+      <nav className="max-w-[75rem] mx-auto sm:flex sm:justify-between py-[4.45rem] ">
+        <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+          <img
+            src={Logo}
+            alt=""
+            className="object-cover cursor-pointer w-[8.375rem] h-[2.82369rem] -mt-[1.01rem] z-10"
+          />
+        </Link>
         <ul className="text-white flex space-x-[2.56rem] z-50">
           <Link to="/" className={location.pathname === "/" ? "active" : ""}>
             <li className="active:text-[#C979CF] text-[1.125rem] font-normal leading-[1rem] tracking-[0.00563rem]">
@@ -22,7 +24,10 @@ const NavBar = () => {
             </li>
           </Link>
 
-          <Link>
+          <Link
+            to="/about"
+            className={location.pathname === "/about" ? "active" : ""}
+          >
             <li className="active:text-[#C979CF] text-[1.125rem] font-normal leading-[1rem] tracking-[0.00563rem]">
               About
             </li>

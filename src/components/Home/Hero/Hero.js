@@ -5,7 +5,7 @@ import Ellipse5 from "../../../Assets/Ellipse5.png";
 // import button from "../../Assets/button.png";
 import Ellipse7 from "../../../Assets/Ellipse7.png";
 import magic from "../../../Assets/magic.png";
-
+import Spotlight from "../../../Assets/Spotlight.png";
 import picture from "../../../Assets/picture.png";
 
 const Hero = () => {
@@ -14,11 +14,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="h-[72rem] bg-[#040013]">
+    <section className="h-[75rem] bg-[#040013]">
       <header>
         {" "}
-        <div className="pt-[2.75rem]">
-          <h1 className="text-[3rem] text leading-[3.125rem] font-medium text-center z-50 ">
+        <div className="pt-[10.75rem]">
+          <h1 className="text-[3rem] text-white/90 leading-[3.125rem] font-medium text-center z-50 ">
             Hello, I’m Folake Florence, <br />a{" "}
             <span className="font-bold text-white">Digital Product</span> and
             <span className="font-bold text-white"> Interaction designer</span>
@@ -108,14 +108,16 @@ const Hero = () => {
             />
           </div>
           <div className="pt-[4.5rem] flex justify-center">
-            <button className="btn text-white border-[1px] border-[#A57F98]  ">
+            <button className="btn text-white border-[1px] border-[#A57F98]">
               Download my CV
             </button>
           </div>
-          <div className="w-[40rem] h-[10.0625rem] mt-[1.75rem]s bg-[#040013]  mx-auto">
-            <div className="w-[40rem] h-12 mt-[7.19rem] shadow-xl shadow-[#C979CF]/50 "></div>
+          <div className="w-[60rem] h-[10.0625rem]  mt-[1.75rem]s bg-[#040013]  mx-auto">
+            {/* <div className="w-[40rem] h-12  shadow-xl shadow-[#C979CF]/50 "> */}
+            <img src={Spotlight} alt="" className="object-cover mt-[7.19rem]" />
+            {/* </div> */}
           </div>
-          <p className="text-center pb-[10.01rem] text-[3rem] font-medium leading-normal text-white/80">
+          <p className="text-center pb-[10.01rem] text-[3rem] -mt-7 font-medium leading-normal text-white/80">
             Featured Projects
           </p>
         </div>
