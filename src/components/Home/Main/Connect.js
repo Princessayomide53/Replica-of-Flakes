@@ -6,9 +6,9 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Connect = () => {
   return (
-    <section className="bg-[#040013] py-[4.75rem]">
+    <section className="bg-[#040013] lg:py-[3.75rem] xl:py-[4.75rem]">
       <div className="flex flex-col items-center justify-center">
-        <h4 className="design text-[2.5rem] font-medium leading-normal">
+        <h4 className="design md:text-[2rem] lg:text-[2.5rem] font-medium leading-normal">
           Want to create design magic?
         </h4>
         <button className="btn text-white border-[1px] border-[#A57F98] text-base mt-5">

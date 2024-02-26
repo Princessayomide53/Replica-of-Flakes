@@ -168,3 +168,108 @@ body {
 .skills {
   font-family: "Island Moments", cursive;
 }
+.Ellipse5 {
+  width: 12.32638rem;
+  height: 25.20706rem;
+  transform: rotate(89.386deg);
+  border-radius: 25.20706rem;
+  background: rgba(99, 63, 211, 0.15);
+  filter: blur(150px);
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    filter: drop-shadow(0px 0px 15px rgba(201, 121, 207, 1));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 25px rgba(201, 121, 207, 1));
+  }
+}
+
+.glowing-text {
+  animation: glow 2s infinite alternate;
+}
+
+.glow {
+  animation: glow 1.3s ease infinite;
+  -moz-animation: glow 1.3s ease infinite;
+  -webkit-animation: glow 1.3s ease infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 1px rgb(201, 121, 207), 0 0 2px rgb(201, 121, 207),
+      0 0 3px rgba(201, 121, 207, 1);
+  }
+  50% {
+    text-shadow: 0 0 2px rgb(201, 121, 207),
+      0 0 6px rgb(201, 121, 207) 0 0 4px rgb(201, 121, 207);
+  }
+  100% {
+    text-shadow: 0 0 1px rgb(201, 121, 207), 0 0 2px rgb(201, 121, 207),
+      -1px 1px 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+.text-with-stroke {
+  /* color: white; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 rgba(255, 255, 255, 0.5),
+    -1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.dropdown {
+  animation: slideInFromTop 0.5s ease forwards;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    position: relative;
+    width: 12.5rem;
+    height: 3.125rem;
+    border-radius: 1.875rem;
+    overflow: hidden;
+    background: transparent;
+    border: 1px solid #a57f98;
+    color: white;
+  }
+  .Ellipse {
+    width: 22.98288rem;
+    height: 25.20706rem;
+    transform: rotate(38.213deg);
+    border-radius: 25.20706rem;
+    background: rgba(99, 63, 211, 0.15);
+    filter: blur(150px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    position: relative;
+    width: 8.5rem;
+    height: 2.125rem;
+    border-radius: 1.875rem;
+    overflow: hidden;
+    background: transparent;
+    border: 1px solid #a57f98;
+    color: white;
+    font-size: small;
+  }
+  .Ellipse {
+    width: 15.98288rem;
+    height: 15.20706rem;
+    transform: rotate(38.213deg);
+    border-radius: 25.20706rem;
+    background: rgba(99, 63, 211, 0.15);
+    filter: blur(150px);
+  }
+}

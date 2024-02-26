@@ -4,20 +4,25 @@ import G1 from "../../../Assets/G1.png";
 import G2 from "../../../Assets/G2.png";
 import G3 from "../../../Assets/G3.png";
 import G4 from "../../../Assets/G4.png";
+import Ellipse8 from "../../../Assets/Ellipse8.png";
+import Connect from "../../Home/Main/Connect";
 
 const About = () => {
   return (
-    <section className="overflow-hidden bg-[#040013] h-[200.625rem]">
+    <section className="overflow-hidden bg-[#040013] lg:h-[177.625rem] xl:h-[180.625rem] ">
       <NavBar />
-      <div className="pt-[12.75rem] ">
-        <h2 className="text-white text-center text-[2.5rem] font-medium leading-[2rem] tracking-[0.0125rem]">
+      <div className="pt-[12.75rem] relative">
+        <h2 className="text-white text-center lg:text-[2.2rem] xl:text-[2.5rem] font-medium leading-[2rem] tracking-[0.0125rem]">
           Hi, my name is Folake Florence and I love things that move
         </h2>
-        <div className="flex justify-center max-w-[73rem] mx-auto gap-[2rem] pt-[5rem]">
+        <div className="absolute left-1/2 top-16 z-20">
+          <img src={Ellipse8} alt="" className="Ellipse5" />
+        </div>
+        <div className="flex justify-center lg:max-w-[65rem] xl:max-w-[73rem] mx-auto gap-[2rem] pt-[5rem]">
           <img
             src={G1}
             alt=""
-            className="w-[40.12569rem] h-[39.375rem] object-cover"
+            className="lg:w-[35.12569rem] xl:w-[40.12569rem] h-[39.375rem] object-cover rounded-md"
           />
           <span className="flex flex-col gap-[2.5rem]">
             <img src={G2} alt="" />
@@ -25,10 +30,10 @@ const About = () => {
           </span>
         </div>
 
-        <p className="text-white/90  pt-[4.94rem] flex justify-center text-[1.25rem] font-medium leading-[2rem] tracking-[0.00625rem]">
+        <p className="text-white/90 lg:max-w-[57rem] xl:max-w-[73rem]  mx-auto pt-[4.94rem] flex justify-center lg:text-lg xl:text-[1.25rem] font-medium leading-[2rem] tracking-[0.00625rem]">
           I started product design as way to establish a defined career path and
           discovered that designing was both fun,
-          <br /> engaging and meaningful.
+          <br className="hidden xl:block" /> engaging and meaningful.
           <br />
           <br />
           What i fancy most about design is seeing my ideas materialize into
@@ -38,13 +43,13 @@ const About = () => {
           <br /> to create products that solve users problem and work on amazing
           projects that improve lives.{" "}
         </p>
-        <div className="pt-[7.12rem] flex justify-evenly max-w-[70rem] mx-auto">
+        <div className="pt-[7.12rem] flex justify-evenly lg:max-w-[57rem] xl:max-w-[70rem] mx-auto">
           <div>
             <h5 className="text-[1.9375rem] pt-[0.5rem] pb-[2rem] text-white font-medium leadng-[2rem] tracking-[0.00969rem]">
               Hobbies and Funfacts
             </h5>
 
-            <p className="text-white text-[1.25rem] font-normal leading-[2rem]">
+            <p className="text-white lg:text-lg xl:text-[1.25rem] font-normal leading-[2rem]">
               I designed a web application for the Lagos State
               <br /> Residents Registration Agency (LASSRA) to help <br />
               track the delivery, relocation and status of resident <br />
@@ -120,7 +125,13 @@ const About = () => {
             </p>
           </div>
         </div>
+        <div className="xl:pt-[5.53rem] lg:pt-[4.53rem] lg:pb-[4.53rem] xl:pb-[5rem] flex justify-center">
+          <button className="btn text-white border-[1px] border-[#A57F98]">
+            Download my CV
+          </button>
+        </div>
       </div>
+      <Connect />
     </section>
   );
 };
