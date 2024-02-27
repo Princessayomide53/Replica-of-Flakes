@@ -60,7 +60,7 @@ const Projects = (props) => {
                       </div>
                     </a>
                   </div>
-                  <p className="text-white px-5 text-xs py-[1.62rem] md:py-[3.62rem] leading-[1.4rem] md:text-base font-medium md:px-5 lg:px-10">
+                  <p className="text-white px-5 text-xs py-[1.62rem] md:py-[3.62rem] leading-[1.4rem] md:text-base font-normal md:px-5 lg:px-10">
                     {item.text}
                   </p>
                   <div className="px-5 flex justify-center">

@@ -102,9 +102,9 @@ const About = () => {
             className="md:w-[22rem] md:h-[32rem] lg:w-[28rem] lg:h-[29rem]"
           />
         </div>
-        <div className="md:pt-[8.28rem] pb-[3rem] md:pb-[4rem] pt-[3.28rem] space-y-[2rem] md:space-y-0 flex justify-around place-content-start md:flex-row max-w-[70rem] md:place-content-center mx-auto">
+        <div className="md:pt-[8.28rem] pb-[3rem] md:pb-[4rem] pt-[3.28rem]  md:space-y-0 flex justify-around max-w-[70rem] md:place-content-center mx-auto">
           <div>
-            <h5 className="text-base md:text-[1.9375rem] pt-[0.5rem] pb-[1rem] text-white font-medium leadng-[2rem] tracking-[0.00969rem]">
+            <h5 className="text-base md:text-[1.9375rem] pt-[0.5rem] pb-[1rem] text-white font-medium leading-[2rem] tracking-[0.00969rem]">
               <span className="skills -mt-1">Key</span> Skills
             </h5>
             <p className="text-white text-sm md:text-[1.25rem] font-normal leading-normal">
@@ -135,8 +135,8 @@ const About = () => {
               Responsive design
             </p>
           </div>
-          <div className="flex flex-col items-start justify-start">
-            <h5 className="text-sm md:text-[1.9375rem] pt-[0.5rem] pb-[1rem] text-white font-medium leadng-[2rem] tracking-[0.00969rem]">
+          <div className="">
+            <h5 className="text-sm md:text-[1.9375rem] pt-[0.5rem] pb-[1rem] text-white font-medium leading-[2rem] tracking-[0.00969rem]">
               <span className="skills -mt-1">Soft</span> Skills
             </h5>
 

@@ -3,6 +3,7 @@ import { FaBehance } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaDribbble } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Connect = () => {
   return (
@@ -11,9 +12,11 @@ const Connect = () => {
         <h4 className="design text-[1.125rem] md:text-[2rem] lg:text-[2.5rem] font-medium leading-normal">
           Want to create design magic?
         </h4>
+
         <button className="btn text-white border-[1px] border-[#A57F98] text-base mt-5">
-          Get in touch
+          <Link to="/contact"> Get in touch</Link>
         </button>
+
         <div className="flex space-x-5 mt-8">
           <a
             href="https://www.behance.net/folakeflorence"

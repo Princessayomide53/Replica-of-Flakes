@@ -24,21 +24,21 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="First Name"
-                className="md:w-[35.5rem] w-[20.5rem] lg:w-[42.5rem] pl-5 rounded-lg border-[1px] border-[#A57F98] h-[4.2rem] form  bg-[#040013]"
+                className="md:w-[35.5rem] w-[20.5rem] lg:w-[42.5rem] pl-5 rounded-lg border-[1px] border-[#A57F98] h-[3.2rem] md:h-[4.2rem] form  bg-[#040013]"
               />
             </div>
             <div className="flex justify-center">
               <input
                 type="text"
                 placeholder="Last Name"
-                className="md:w-[35.5rem] w-[20.5rem] lg:w-[42.5rem] pl-5 rounded-lg border-[1px] border-[#A57F98]  h-[4.2rem]  border-opacity-70 bg-[#040013]"
+                className="md:w-[35.5rem] w-[20.5rem] lg:w-[42.5rem] pl-5 rounded-lg border-[1px] border-[#A57F98] h-[3.2rem] md:h-[4.2rem]  border-opacity-70 bg-[#040013]"
               />
             </div>
             <div className="flex justify-center">
               <input
                 type="text"
                 placeholder="Email"
-                className="md:w-[35.5rem] w-[20.5rem] lg:w-[42.5rem] pl-5 rounded-lg  h-[4.2rem] border-[1px] border-[#A57F98] bg-[#040013]"
+                className="md:w-[35.5rem] w-[20.5rem] lg:w-[42.5rem] pl-5 rounded-lg h-[3.2rem] md:h-[4.2rem] border-[1px] border-[#A57F98] bg-[#040013]"
               />
             </div>
             <div className="flex justify-center">

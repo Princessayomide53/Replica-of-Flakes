@@ -43,7 +43,7 @@ const dummy_Data = [
     type: "mobile 2023",
     name: "Quickfill",
     text: "QuickFill aims to ease the stress of refilling gas and buying cylinders. Users can make their order on the app and have a vendor pick up and deliver. This system is efficient as it reduces time and stress of visiting the gas station.",
-    Link: "https://www.behance.net/gallery/184771541/Nova-Properties-Brand-Identity-Design",
+    Link: "https://www.behance.net/gallery/160412853/Quick-Fill-Case-Study",
   },
   {
     id: 5,

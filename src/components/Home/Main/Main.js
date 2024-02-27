@@ -43,7 +43,7 @@ const Main = (props) => {
                     </div>
                   </a>
                 </div>
-                <p className="text-white px-5 text-xs py-[1.62rem] md:py-[3.62rem] leading-[1.4rem] md:text-base font-medium md:px-5 lg:px-10">
+                <p className="text-white px-5 text-xs py-[1.62rem] md:py-[3.62rem] leading-[1.4rem] md:text-base font-normal md:px-5 lg:px-10">
                   {items.text}
                 </p>
                 <div className="px-5 flex justify-center">
@@ -86,10 +86,17 @@ const Main = (props) => {
                         : ""
                     } ${index === props.item.length - 2 ? "h-[8.98844rem]" : ""}
                 
-                 ${index === props.item.length - 3 ? "lg:w-[46.091rem]" : ""} ${
-                      index === props.item.length - 3 ? "lg:h-[31.75rem]" : ""
+                    ${
+                      index === props.item.length - 3
+                        ? "xl:w-[24.28844rem]"
+                        : ""
+                    }
+                 ${index === props.item.length - 3 ? "lg:w-[20.091rem]" : ""} ${
+                      index === props.item.length - 3 ? "xl:-mt-0" : ""
+                    }  ${
+                      index === props.item.length - 3 ? "lg:h-[18.75rem]" : ""
                     } ${
-                      index === props.item.length - 3 ? "lg:-mt-[5.5rem]" : ""
+                      index === props.item.length - 3 ? "lg:-mt-[1.5rem]" : ""
                     } ${
                       index === props.item.length - 3 ? "md:h-[9.28844rem]" : ""
                     } ${
@@ -112,9 +119,9 @@ const Main = (props) => {
 
 
 
-                ${index === props.item.length - 5 ? "xl:h-[20.78844rem]" : ""}
+                ${index === props.item.length - 5 ? "xl:h-[18.78844rem]" : ""}
                 ${index === props.item.length - 5 ? "xl:w-[43.091rem]" : ""} 
-                ${index === props.item.length - 5 ? "lg:h-[20.78844rem]" : ""}
+                ${index === props.item.length - 5 ? "lg:h-[15.78844rem]" : ""}
                 ${index === props.item.length - 5 ? "md:h-[9.28844rem]" : ""}
                 ${index === props.item.length - 5 ? "h-[9.18844rem]" : ""}
 
