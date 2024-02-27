@@ -221,17 +221,39 @@ body {
   font-weight: 600;
 }
 
-@keyframes slideInFromTop {
-  from {
-    transform: translateY(-100%);
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
   }
-  to {
-    transform: translateY(0);
+  100% {
+    transform: translateX(0);
   }
 }
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 .dropdown {
-  animation: slideInFromTop 0.5s ease forwards;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
 }
+
+.slide-in {
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+}
+
+.slide-out {
+  animation-name: slideOut;
+  /* animation-fill-mode: forwards; */
+}
+
 @media only screen and (min-width: 768px) {
   .btn {
     position: relative;
@@ -250,6 +272,17 @@ body {
     border-radius: 25.20706rem;
     background: rgba(99, 63, 211, 0.15);
     filter: blur(150px);
+  }
+  .projects {
+    width: 25.75rem;
+    height: 16.9375rem;
+    border-radius: 25.75rem;
+    background: linear-gradient(
+      180deg,
+      rgba(99, 63, 211, 0.1) 0%,
+      rgba(212, 68, 236, 0.03) 100%
+    );
+    filter: blur(50px);
   }
 }
 @media only screen and (max-width: 767px) {
@@ -271,5 +304,16 @@ body {
     border-radius: 25.20706rem;
     background: rgba(99, 63, 211, 0.15);
     filter: blur(150px);
+  }
+  .projects {
+    width: 13.44588rem;
+    height: 8.84425rem;
+    border-radius: 25.75rem;
+    background: linear-gradient(
+      180deg,
+      rgba(99, 63, 211, 0.1) 0%,
+      rgba(212, 68, 236, 0.03) 100%
+    );
+    filter: blur(50px);
   }
 }

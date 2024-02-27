@@ -47,7 +47,7 @@ const Contact = () => {
                 className="md:w-[35.5rem] w-[20.5rem] lg:w-[42.5rem] p-5 rounded-lg  h-[12.5rem] border-[1px] border-[#A57F98] bg-[#040013]"
               />
             </div>
-            <div className="">
+            <div className="pb-20 md:pb-0">
               <button className="btn uppercase  text-white border-[1px] border-[#A57F98]">
                 Send
               </button>

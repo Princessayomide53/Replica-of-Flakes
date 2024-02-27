@@ -23,25 +23,24 @@ const Hero = () => {
             <span className="font-bold text-white">Digital Product</span> and
             <span className="font-bold text-white"> Interaction designer</span>
           </h1>
-          <div className="pt-[1.31rem] flex justify-center px-5 md:px-0">
-            <p className="text-[#C979CF] text-sm md:text-[1.275rem]  lg:text-[1.875rem] font-medium leading-normal tracking-[-0.05625rem]">
+          <div className="pt-[1.31rem] flex justify-center  md:px-0">
+            <p className="text-[#C979CF] text-[1.125rem] md:text-[1.275rem]  lg:text-[1.875rem] font-medium leading-normal tracking-[-0.05625rem]">
               I bring design
             </p>
-            {/* <div className="glowing-text">
-              <img
-                src={magic}
-                alt=""
-                className="object-cover w-[2rem] h-[1.5rem] md:h-[5.125rem] md:w-[6.5rem] md:-mt-6 lg:-mt-5 glowing-text"
-              />
-            </div> */}
 
-            <p className="text-with-stroke text-sm px-[5px] md:px-2 md:mt-2 md:text-2xl  glow">
+            <p className="text-with-stroke text-[1.125rem] px-[5px] md:px-2 lg:mt-[4px] md:text-2xl  glow">
               magic
             </p>
-            <p className="text-[#C979CF] text-sm md:text-[1.275rem] lg:text-[1.875rem] font-medium leading-normal tracking-[-0.05625rem]">
-              to mobile and web based applications{" "}
+            <p className="text-[#C979CF] text-center hidden md:flex text-[1.125rem] md:text-[1.275rem] lg:text-[1.875rem] font-medium leading-normal tracking-[-0.05625rem]">
+              to mobile and web based applications
+            </p>
+            <p className="text-[#C979CF] text-center flex md:hidden text-[1.125rem] md:text-[1.275rem] lg:text-[1.875rem] font-medium leading-normal tracking-[-0.05625rem]">
+              to mobile and
             </p>
           </div>
+          <p className="text-[#C979CF] block md:hidden text-center text-[1.125rem] md:text-[1.275rem] lg:text-[1.875rem] font-medium leading-normal tracking-[-0.05625rem]">
+            web based applications
+          </p>
           <div className="relative">
             {/* <img
               src={Ellipse6}
@@ -49,7 +48,7 @@ const Hero = () => {
               className="Ellipse2 absolute -top-[8rem] left-[28rem]"
             /> */}
           </div>
-          <div className="flex flex-col relative justify-center mt-5 md:-mt-5 items-center">
+          <div className="flex flex-col relative justify-center mt-7 md:-mt-5 items-center">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -175,12 +174,19 @@ const Hero = () => {
               Download my CV
             </button>
           </div>
-          <div className="lg:w-[60rem] h-[10.0625rem]  mt-[1.75rem]s bg-[#040013]  mx-auto">
+          <div className="lg:w-[60rem] h-[4.5625rem] md:h-[10.0625rem]  md:mt-[1.75rem] bg-[#040013]  mx-auto">
             {/* <div className="w-[40rem] h-12  shadow-xl shadow-[#C979CF]/50 "> */}
-            <img src={Spotlight} alt="" className="object-cover mt-[7.19rem]" />
+            <img
+              src={Spotlight}
+              alt=""
+              className="object-cover mt-[3.5rem] md:mt-[7.19rem]"
+            />
             {/* </div> */}
           </div>
-          <p className="text-center md:pb-[6.01rem] lg:pb-[9.01rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] -mt-7 font-medium leading-normal text-white/80">
+          <p
+            id="projects"
+            className="text-center pb-[3rem] md:pb-[6.01rem] lg:pb-[9.01rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] md:-mt-7 font-medium leading-normal text-white/80"
+          >
             Featured Projects
           </p>
         </div>
