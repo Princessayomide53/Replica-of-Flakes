@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../Home/NavBar/NavBar";
 import G1 from "../../../Assets/G1.png";
 import G2 from "../../../Assets/G2.png";
@@ -6,8 +6,14 @@ import G3 from "../../../Assets/G3.png";
 import G4 from "../../../Assets/G4.png";
 import Ellipse8 from "../../../Assets/Ellipse8.png";
 import Connect from "../../Home/Main/Connect";
+import Resume from "../../../Assets/Resume.pdf";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    return () => {};
+  }, []);
+
   return (
     <section className="overflow-hidden bg-[#040013] h-[158rem] md:h-[165rem] lg:h-[177.625rem] xl:h-[180.625rem] ">
       <NavBar />
@@ -102,7 +108,7 @@ const About = () => {
             className="md:w-[22rem] md:h-[32rem] lg:w-[28rem] lg:h-[29rem]"
           />
         </div>
-        <div className="md:pt-[8.28rem] pb-[3rem] md:pb-[4rem] pt-[3.28rem]  md:space-y-0 flex justify-around max-w-[70rem] md:place-content-center mx-auto">
+        <div className="md:pt-[8.28rem] pb-[3rem] md:pb-[4rem] pt-[3.28rem]  md:space-y-0 flex justify-around max-w-[70rem] place-content-center mx-auto">
           <div>
             <h5 className="text-base md:text-[1.9375rem] pt-[0.5rem] pb-[1rem] text-white font-medium leading-[2rem] tracking-[0.00969rem]">
               <span className="skills -mt-1">Key</span> Skills
@@ -159,7 +165,9 @@ const About = () => {
         </div>
         <div className="xl:pt-[4.53rem] pb-[4rem] md:pb-[6rem] lg:pt-[4.53rem] lg:pb-[4.53rem] xl:pb-[3.5rem] flex justify-center">
           <button className="btn text-white border-[1px] border-[#A57F98]">
-            Download my CV
+            <a href={Resume} download="Resume" className="">
+              Download my CV
+            </a>
           </button>
         </div>
       </div>

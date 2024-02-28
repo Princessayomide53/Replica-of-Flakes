@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../Home/NavBar/NavBar";
 import Connect from "../../Home/Main/Connect";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    return () => {};
+  }, []);
+
   return (
     <section className="overflow-hidden bg-[#040013] h-[74.625rem] md:h-[95.625rem]">
       <NavBar />

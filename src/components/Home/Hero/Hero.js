@@ -7,6 +7,7 @@ import Ellipse7 from "../../../Assets/Ellipse7.png";
 import magic from "../../../Assets/magic.png";
 import Spotlight from "../../../Assets/Spotlight.png";
 import picture from "../../../Assets/picture.png";
+import Resume from "../../../Assets/Resume.pdf";
 
 const Hero = () => {
   const blobStyle = {
@@ -171,7 +172,9 @@ const Hero = () => {
           </div>
           <div className="pt-[2.5rem] md:pt-[4.5rem] flex justify-center">
             <button className="btn text-white border-[1px] border-[#A57F98]">
-              Download my CV
+              <a href={Resume} download="Resume" className="">
+                Download my CV
+              </a>
             </button>
           </div>
           <div className="lg:w-[60rem] h-[4.5625rem] md:h-[10.0625rem]  md:mt-[1.75rem] bg-[#040013]  mx-auto">

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Connect = () => {
   return (
-    <section className="bg-[#040013] lg:py-[3.75rem] xl:py-[4.75rem]">
+    <section className="bg-[#040013] py-[2.5rem] lg:py-[3.75rem] xl:py-[4.75rem]">
       <div className="flex flex-col items-center justify-center">
         <h4 className="design text-[1.125rem] md:text-[2rem] lg:text-[2.5rem] font-medium leading-normal">
           Want to create design magic?

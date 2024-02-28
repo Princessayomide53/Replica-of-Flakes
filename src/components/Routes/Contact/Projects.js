@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Spotlight from "../../../Assets/Spotlight.png";
 import Card from "../../UI/Card";
 import { IoIosArrowForward } from "react-icons/io";
@@ -6,6 +6,11 @@ import Ellipsep from "../../../Assets/Ellipsep.png";
 import NavBar from "../../Home/NavBar/NavBar";
 
 const Projects = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    return () => {};
+  }, []);
+
   console.log(props.items, "items");
   return (
     <>
@@ -67,7 +72,7 @@ const Projects = (props) => {
                     <img
                       src={item.img}
                       alt=""
-                      className={`object-contain ${
+                      className={`object-contain  ${
                         index === props.items.length - 1
                           ? "xl:w-[35.78844rem]"
                           : ""
@@ -107,15 +112,20 @@ const Projects = (props) => {
                         index === props.items.length - 2 ? "h-[8.98844rem]" : ""
                       }
                   
-                   ${
-                     index === props.items.length - 3 ? "lg:w-[46.091rem]" : ""
-                   } ${
+                      ${
                         index === props.items.length - 3
-                          ? "lg:h-[31.75rem]"
+                          ? "xl:w-[24.28844rem]"
+                          : ""
+                      }
+                   ${
+                     index === props.items.length - 3 ? "lg:w-[20.091rem]" : ""
+                   } ${index === props.items.length - 3 ? "xl:-mt-0" : ""}  ${
+                        index === props.items.length - 3
+                          ? "lg:h-[18.75rem]"
                           : ""
                       } ${
                         index === props.items.length - 3
-                          ? "lg:-mt-[5.5rem]"
+                          ? "lg:-mt-[1.5rem]"
                           : ""
                       } ${
                         index === props.items.length - 3
@@ -144,15 +154,15 @@ const Projects = (props) => {
                           ? "h-[10.58844rem]"
                           : ""
                       }
-
-
-
+  
+  
+  
                   ${
-                    index === props.items.length - 5 ? "xl:h-[20.78844rem]" : ""
+                    index === props.items.length - 5 ? "xl:h-[18.78844rem]" : ""
                   }
                   ${index === props.items.length - 5 ? "xl:w-[43.091rem]" : ""} 
                   ${
-                    index === props.items.length - 5 ? "lg:h-[20.78844rem]" : ""
+                    index === props.items.length - 5 ? "lg:h-[15.78844rem]" : ""
                   }
                   ${index === props.items.length - 5 ? "md:h-[9.28844rem]" : ""}
                   ${index === props.items.length - 5 ? "h-[9.18844rem]" : ""}
