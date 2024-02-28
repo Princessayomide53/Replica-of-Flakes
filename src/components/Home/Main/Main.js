@@ -15,7 +15,7 @@ const Main = (props) => {
             key={items.id}
             style={index === props.item.length - 1 ? { display: "none" } : null}
           >
-            <a href={items.Link} target="_blank" rel="noopener noreferrer">
+            <a href={items.Link}>
               <div>
                 <img src={Ellipsep} alt="" className="project object-cover" />
               </div>
@@ -33,11 +33,7 @@ const Main = (props) => {
                   <h2 className="text-white text text-[0.78325rem] md:text-lg lg:text-[1.5rem] font-semibold">
                     {items.name}
                   </h2>
-                  <a
-                    href={items.Link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={items.Link}>
                     <div className="lg:p-3 p-2 md:p-2 border-2 border-white rounded-full -mt-4">
                       <IoIosArrowForward className="text-white text-base md:text-2xl lg:text-4xl " />
                     </div>

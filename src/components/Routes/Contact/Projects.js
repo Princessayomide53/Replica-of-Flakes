@@ -37,7 +37,7 @@ const Projects = (props) => {
               className="w-[20.4625rem] h-[27.25rem] md:h-[36.5875rem] md:w-[20.1875rem] lg:w-[28.1875rem] xl:w-[34.1875rem] lg:h-[43.9875rem] xl:h-[45.5875rem] card "
               key={item.id}
             >
-              <a href={item.Link} target="_blank" rel="noopener noreferrer">
+              <a href={item.Link}>
                 <div>
                   <img src={Ellipsep} alt="" className="project object-cover" />
                 </div>
@@ -55,11 +55,7 @@ const Projects = (props) => {
                     <h2 className="text-white text text-[0.78325rem] md:text-lg lg:text-[1.5rem] font-semibold">
                       {item.name}
                     </h2>
-                    <a
-                      href={item.Link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href={item.Link}>
                       <div className="lg:p-3 p-2 md:p-2 border-2 border-white rounded-full -mt-4">
                         <IoIosArrowForward className="text-white text-base md:text-2xl lg:text-4xl " />
                       </div>
