@@ -36,51 +36,51 @@ const Projects = (props) => {
             <Card
               className="w-[20.4625rem] h-[27.25rem] md:h-[36.5875rem] md:w-[20.1875rem] lg:w-[28.1875rem] xl:w-[34.1875rem] lg:h-[43.9875rem] xl:h-[45.5875rem] card "
               key={item.id}
+              href={item.Link}
             >
-              <a href={item.Link}>
-                <div>
-                  <img src={Ellipsep} alt="" className="project object-cover" />
-                </div>
+              <div>
+                <img src={Ellipsep} alt="" className="project object-cover" />
+              </div>
 
-                <div className="-mt-[250px]  lg:-mt-[310px]">
-                  <div className="flex justify-between pt-[3.37rem] pb-[3.73rem] px-4 md:px-5 lg:px-10">
-                    <p className="text-white text-[0.58744rem] md:text-base lg:text-[1.125rem] font-medium">
-                      {item.design}
-                    </p>
-                    <p className="text-white capitalize text-[0.58744rem] md:text-base lg:text-[1.125rem] font-medium">
-                      {item.type}
-                    </p>
-                  </div>
-                  <div className="flex justify-between -mt-2 md:-mt-0 px-5 md:px-5 lg:px-10">
-                    <h2 className="text-white text text-[0.78325rem] md:text-lg lg:text-[1.5rem] font-semibold">
-                      {item.name}
-                    </h2>
-                    <a href={item.Link}>
-                      <div className="lg:p-3 p-2 md:p-2 border-2 border-white rounded-full -mt-4">
-                        <IoIosArrowForward className="text-white text-base md:text-2xl lg:text-4xl " />
-                      </div>
-                    </a>
-                  </div>
-                  <p className="text-white px-5 text-xs py-[1.62rem] md:py-[3.62rem] leading-[1.4rem] md:text-base font-normal md:px-5 lg:px-10">
-                    {item.text}
+              <div className="-mt-[250px]  lg:-mt-[310px]">
+                <div className="flex justify-between pt-[3.37rem] pb-[3.73rem] px-4 md:px-5 lg:px-10">
+                  <p className="text-white text-[0.58744rem] md:text-base lg:text-[1.125rem] font-medium">
+                    {item.design}
                   </p>
-                  <div className="px-5 flex justify-center">
-                    <img
-                      src={item.img}
-                      alt=""
-                      className={`object-contain  ${
-                        index === props.items.length - 1
-                          ? "xl:w-[35.78844rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 1
-                          ? "lg:w-[30.78844rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 1
-                          ? "lg:h-[20.78844rem]"
-                          : ""
-                      }
+                  <p className="text-white capitalize text-[0.58744rem] md:text-base lg:text-[1.125rem] font-medium">
+                    {item.type}
+                  </p>
+                </div>
+                <div className="flex justify-between -mt-2 md:-mt-0 px-5 md:px-5 lg:px-10">
+                  <h2 className="text-white text text-[0.78325rem] md:text-lg lg:text-[1.5rem] font-semibold">
+                    {item.name}
+                  </h2>
+                  <a href={item.Link}>
+                    <div className="lg:p-3 p-2 md:p-2 border-2 border-white rounded-full -mt-4">
+                      <IoIosArrowForward className="text-white text-base md:text-2xl lg:text-4xl " />
+                    </div>
+                  </a>
+                </div>
+                <p className="text-white px-5 text-xs py-[1.62rem] md:py-[3.62rem] leading-[1.4rem] md:text-base font-normal md:px-5 lg:px-10">
+                  {item.text}
+                </p>
+                <div className="px-5 flex justify-center">
+                  <img
+                    src={item.img}
+                    alt=""
+                    className={`object-contain  ${
+                      index === props.items.length - 1
+                        ? "xl:w-[35.78844rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 1
+                        ? "lg:w-[30.78844rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 1
+                        ? "lg:h-[20.78844rem]"
+                        : ""
+                    }
                   ${
                     index === props.items.length - 1 ? "md:h-[13.78844rem]" : ""
                   } ${index === props.items.length - 1 ? "h-[10.78844rem]" : ""}
@@ -89,24 +89,24 @@ const Projects = (props) => {
                        ? "xl:h-[23.13969rem]"
                        : ""
                    } ${
-                        index === props.items.length - 2
-                          ? "xl:w-[45.78844rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 2
-                          ? "xl:h-[19.13969rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 2
-                          ? "lg:h-[17.13969rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 2
-                          ? "md:h-[10.28844rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 2 ? "h-[8.98844rem]" : ""
-                      }
+                      index === props.items.length - 2
+                        ? "xl:w-[45.78844rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 2
+                        ? "xl:h-[19.13969rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 2
+                        ? "lg:h-[17.13969rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 2
+                        ? "md:h-[10.28844rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 2 ? "h-[8.98844rem]" : ""
+                    }
                   
                       ${
                         index === props.items.length - 3
@@ -116,40 +116,32 @@ const Projects = (props) => {
                    ${
                      index === props.items.length - 3 ? "lg:w-[20.091rem]" : ""
                    } ${index === props.items.length - 3 ? "xl:-mt-0" : ""}  ${
-                        index === props.items.length - 3
-                          ? "lg:h-[18.75rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 3
-                          ? "lg:-mt-[1.5rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 3
-                          ? "md:h-[9.28844rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 3 ? "h-[8.98844rem]" : ""
-                      } 
+                      index === props.items.length - 3 ? "lg:h-[18.75rem]" : ""
+                    } ${
+                      index === props.items.length - 3 ? "lg:-mt-[1.5rem]" : ""
+                    } ${
+                      index === props.items.length - 3
+                        ? "md:h-[9.28844rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 3 ? "h-[8.98844rem]" : ""
+                    } 
                  
                    ${
                      index === props.items.length - 4 ? "xl:w-[45.091rem]" : ""
                    } ${
-                        index === props.items.length - 4
-                          ? "xl:h-[20.32rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 4
-                          ? "lg:h-[16.78844rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 4
-                          ? "md:h-[12.78844rem]"
-                          : ""
-                      } ${
-                        index === props.items.length - 4
-                          ? "h-[10.58844rem]"
-                          : ""
-                      }
+                      index === props.items.length - 4 ? "xl:h-[20.32rem]" : ""
+                    } ${
+                      index === props.items.length - 4
+                        ? "lg:h-[16.78844rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 4
+                        ? "md:h-[12.78844rem]"
+                        : ""
+                    } ${
+                      index === props.items.length - 4 ? "h-[10.58844rem]" : ""
+                    }
   
   
   
@@ -177,10 +169,9 @@ const Projects = (props) => {
                   }
                   ${index === props.items.length - 6 ? "h-[11.18844rem]" : ""}
                   `}
-                    />
-                  </div>
+                  />
                 </div>
-              </a>
+              </div>
             </Card>
           ))}
         </div>

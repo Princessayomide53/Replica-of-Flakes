@@ -46,7 +46,7 @@ const NavBar = () => {
               ></div>
 
               <ul
-                className={`bg-[#040013] ${nav ? "slide-in" : "slide-out"}
+                className={`bg-[#040013] ${nav ? "slide-in" : "right-[100%]"}
                  dropdown  w-[70%] px-[2.35rem] py-[1.5rem] h-[30.3125rem] flex flex-col  absolute right-0 -top-5 z-50`}
               >
                 <div onClick={handleClose} className="flex justify-end">

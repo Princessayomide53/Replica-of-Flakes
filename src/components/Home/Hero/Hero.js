@@ -15,11 +15,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="lg:h-[75rem] xl:h-[83rem] md:h-[67rem] bg-[#040013]">
+    <section className="lg:h-[75rem] xl:h-[83rem] md:h-[67rem] h-full bg-[#040013]">
       <header>
         {" "}
         <div className="md:pt-[10.75rem] pt-[7rem]">
-          <h1 className="md:text-[2rem] text-[1.25rem] px-5 md:px-0 lg:text-[2.3rem] xl:text-[3rem] text-white/90 leading-normal md:leading-[3.125rem] font-medium text-center z-50 ">
+          <h1 className="md:text-[2rem] text-[1.25rem] px-7 md:px-0 lg:text-[2.3rem] xl:text-[3rem] text-white/90 leading-normal md:leading-[3.125rem] font-medium text-center z-50 ">
             Hello, I’m Folake Florence, <br />a{" "}
             <span className="font-bold text-white">Digital Product</span> and
             <span className="font-bold text-white"> Interaction designer</span>
@@ -59,6 +59,7 @@ const Hero = () => {
               style={{ opacity: 1 }}
               filter="blur(0px)"
               transform="rotate(0)"
+              // className="hidden md:block"
             >
               <image
                 x="0"
@@ -96,9 +97,11 @@ const Hero = () => {
                   to="360 250 250"
                   dur="9000ms"
                   repeatCount="indefinite"
+                  className="blob-animation"
                 />
               </clipPath>
             </svg>
+
             <div className="absolute top-[2rem] right-[23rem]">
               <img src={Ellipse5} alt="" className=" Ellipse2" />
             </div>
