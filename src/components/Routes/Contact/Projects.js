@@ -4,6 +4,7 @@ import Card from "../../UI/Card";
 import { IoIosArrowForward } from "react-icons/io";
 import Ellipsep from "../../../Assets/Ellipsep.png";
 import NavBar from "../../Home/NavBar/NavBar";
+import transitions from "../../Home/transitions";
 
 const Projects = (props) => {
   useEffect(() => {
@@ -180,4 +181,4 @@ const Projects = (props) => {
   );
 };
 
-export default Projects;
+export default transitions(Projects);

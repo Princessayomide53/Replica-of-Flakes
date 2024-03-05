@@ -1069,3 +1069,22 @@ body {
     animation-duration: 9000ms; /* Full rotation duration for big screens */
   }
 }
+
+.slides-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #040013;
+  transform-origin: bottom;
+}
+.slides-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #040013;
+  transform-origin: top;
+}

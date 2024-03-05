@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import NavBar from "../../Home/NavBar/NavBar";
 import Connect from "../../Home/Main/Connect";
+import transitions from "../../Home/transitions";
 
 const Contact = () => {
   useEffect(() => {
@@ -65,4 +66,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default transitions(Contact);

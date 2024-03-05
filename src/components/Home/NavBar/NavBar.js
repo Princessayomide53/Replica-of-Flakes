@@ -55,7 +55,7 @@ const NavBar = () => {
                 <div className="flex flex-col justify-center items-start pb-[2.91rem] space-y-[3.12rem] mt-auto">
                   <Link
                     to="/"
-                    activeClassName="active"
+                    // activeClassName="active"
                     className={
                       location.pathname === "/" ? "active" : "text-white"
                     }

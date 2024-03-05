@@ -3,6 +3,7 @@ import Hero from "./Hero/Hero";
 import Connect from "./Main/Connect";
 import Data from "./Main/Data";
 import NavBar from "./NavBar/NavBar";
+import transitions from "./transitions";
 
 const Home = () => {
   useEffect(() => {
@@ -12,7 +13,6 @@ const Home = () => {
 
   return (
     <div>
-      {" "}
       <NavBar />
       <Hero />
       <Data />
@@ -21,4 +21,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default transitions(Home);

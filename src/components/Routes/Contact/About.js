@@ -7,6 +7,7 @@ import G4 from "../../../Assets/G4.png";
 import Ellipse8 from "../../../Assets/Ellipse8.png";
 import Connect from "../../Home/Main/Connect";
 import Resume from "../../../Assets/Resume.pdf";
+import transitions from "../../Home/transitions";
 
 const About = () => {
   useEffect(() => {
@@ -176,4 +177,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default transitions(About);
