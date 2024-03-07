@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 
 const RouteComponent = () => {
   return (
-    <div>
+    <>
       <AnimatePresence mode="wait">
         <Router>
           <Routes>
@@ -20,7 +20,7 @@ const RouteComponent = () => {
           </Routes>
         </Router>
       </AnimatePresence>
-    </div>
+    </>
   );
 };
 

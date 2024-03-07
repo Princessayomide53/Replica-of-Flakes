@@ -1,13 +1,13 @@
 import React from "react";
 import Main from "./Main";
-import Lassra from "../../../Assets/Lassra.png";
-import Links from "../../../Assets/Links.png";
-import Quickfill from "../../../Assets/Quickfill.png";
-import Eppcheck from "../../../Assets/Eppcheck.png";
-import inawo from "../../../Assets/inawo.png";
+import Lassra from "../../../Assets/Lassra.webp";
+import Links from "../../../Assets/Links.webp";
+import Quickfill from "../../../Assets/Quickfill.webp";
+import Eppcheck from "../../../Assets/Eppcheck.webp";
+import inawo from "../../../Assets/inawo.webp";
 import Projects from "../../Routes/Contact/Projects";
 import { useLocation } from "react-router-dom";
-import Nova from "../../../Assets/Nova.png";
+import Nova from "../../../Assets/Nova.webp";
 
 const dummy_Data = [
   {
@@ -52,7 +52,7 @@ const dummy_Data = [
     type: "web 2023",
     name: "Nova Branding",
     text: "Nova branding is a logo and brand design for a cutting-edge real estate website. The goal was to create a visual identity that would convey the brands commitment to innovation and excellence in the real estate industry.",
-    Link: "https://www.eppcheck.com/",
+    Link: "https://www.behance.net/gallery/184771541/Nova-Properties-Brand-Identity-Design",
   },
   {
     id: 6,

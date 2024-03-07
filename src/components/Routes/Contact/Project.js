@@ -5,11 +5,13 @@ import Connect from "../../Home/Main/Connect";
 
 const Project = () => {
   return (
-    <section>
-      {/* <Projects /> */}
-      <Data />
-      <Connect />
-    </section>
+    <>
+      <section>
+        {/* <Projects /> */}
+        <Data />
+        <Connect />
+      </section>
+    </>
   );
 };
 

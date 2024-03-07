@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import Spotlight from "../../../Assets/Spotlight.png";
+import Spotlight from "../../../Assets/Spotlight.webp";
 import Card from "../../UI/Card";
 import { IoIosArrowForward } from "react-icons/io";
-import Ellipsep from "../../../Assets/Ellipsep.png";
+import Ellipsep from "../../../Assets/Ellipsep.webp";
 import NavBar from "../../Home/NavBar/NavBar";
 import transitions from "../../Home/transitions";
+import { motion } from "framer-motion";
 
 const Projects = (props) => {
   useEffect(() => {
@@ -26,12 +27,18 @@ const Projects = (props) => {
           />
           {/* </div> */}
         </div>
-        <p
-          id="projects"
-          className="text-center pb-[3rem] md:pb-[6.01rem] lg:pb-[9.01rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] md:mt-28 font-medium leading-normal text-white/80"
+        <motion.h1
+          initial={{ opacity: 0.5, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="text-center pb-[3rem] md:pb-[6.01rem] lg:pb-[9.01rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] md:mt-20 lg:mt-32 font-medium leading-normal text-white/80"
         >
           Featured Projects
-        </p>
+        </motion.h1>
         <div className="md:max-w-[45rem] max-w-[21.5rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto grid grid-cols-1 gap-[2.5rem] md:grid-cols-2 place-items-center md:gap-[2.5rem] lg:gap-[3.63rem] xl:gap-[6.62rem] md:pb-[4.37rem] lg:pb-[6.37rem]">
           {props.items?.map((item, index) => (
             <Card

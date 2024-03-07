@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Logo from "../../Assets/Logo.png";
+import Logo from "../../Assets/Logo.webp";
 import { gsap, Power3 } from "gsap";
 
 import { TweenMax } from "gsap/gsap-core";
@@ -49,20 +49,22 @@ const Preloader = () => {
   }, []);
 
   return (
-    <div className="preloader bg-[#040013] w-full fixed h-screen justify-center items-center flex top-0 left-0 z-30">
-      <div className="image-container  opacity-0">
-        <img src={Logo} alt="" className="img" />
+    <>
+      <div className="preloader bg-[#040013] w-full fixed h-screen justify-center items-center flex top-0 left-0 z-30">
+        <div className="image-container  opacity-0">
+          <img src={Logo} alt="" className="img" />
+        </div>
+        <div id="loader" className="image-container opacity-0">
+          <div className="ls-particles ls-part-1"></div>
+          <div className="ls-particles ls-part-2"></div>
+          <div className="ls-particles ls-part-3"></div>
+          <div className="ls-particles ls-part-4"></div>
+          <div className="ls-particles ls-part-5"></div>
+          <div className="lightsaber ls-left ls-green"></div>
+          <div className="lightsaber ls-right ls-red"></div>
+        </div>
       </div>
-      <div id="loader" className="image-container opacity-0">
-        <div className="ls-particles ls-part-1"></div>
-        <div className="ls-particles ls-part-2"></div>
-        <div className="ls-particles ls-part-3"></div>
-        <div className="ls-particles ls-part-4"></div>
-        <div className="ls-particles ls-part-5"></div>
-        <div className="lightsaber ls-left ls-green"></div>
-        <div className="lightsaber ls-right ls-red"></div>
-      </div>
-    </div>
+    </>
   );
 };
 

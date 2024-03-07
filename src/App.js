@@ -5,10 +5,12 @@ import Preloader from "./components/Preloader/Preloader";
 
 function App() {
   return (
-    <div className="overflow-hidden">
-      <Preloader />
-      <Home />
-    </div>
+    <>
+      <div className="overflow-hidden">
+        <Preloader />
+        <Home />
+      </div>
+    </>
   );
 }
 

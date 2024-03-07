@@ -12,12 +12,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <NavBar />
       <Hero />
       <Data />
       <Connect />
-    </div>
+    </>
   );
 };
 

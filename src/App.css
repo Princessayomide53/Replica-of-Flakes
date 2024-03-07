@@ -320,10 +320,10 @@ body {
 
 #loader {
   width: 80px;
-  height: 40px;
+  height: 60px;
   position: absolute;
-  top: 50%;
-  left: 59%;
+  top: 58%;
+  left: 50%;
   margin: -20px -40px;
   z-index: 1000;
 }
@@ -331,7 +331,7 @@ body {
 .lightsaber {
   position: absolute;
   width: 5px;
-  height: 15px;
+  height: 25px;
   background-color: #666;
   border-radius: 1px;
   bottom: 0;
@@ -349,8 +349,8 @@ body {
   position: absolute;
   content: " ";
   display: block;
-  width: 3px;
-  height: 40px;
+  width: 3.5px;
+  height: 80px;
   max-height: 1px;
   left: 1px;
   top: 1px;
@@ -380,7 +380,7 @@ body {
   left: 42px;
   top: 10px;
   width: 1px;
-  height: 5px;
+  height: 15px;
   background-color: rgb(51, 51, 51, 0);
   -webkit-transform: rotateZ(0deg);
   transform: rotateZ(0deg);
