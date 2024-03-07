@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
   return (
     <>
-      <section className="lg:h-[75rem] xl:h-[84rem] md:h-[67rem] h-full bg-[#040013]">
+      <section className="lg:h-[75rem] xl:h-[84rem] md:h-[67rem] h-[44rem] bg-[#040013]">
         <header>
           {" "}
           <div className="md:pt-[10.75rem] pt-[7rem]">
