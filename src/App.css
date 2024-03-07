@@ -284,6 +284,30 @@ body {
     );
     filter: blur(50px);
   }
+  .Ellipse3 {
+    width: 17.97775rem;
+    height: 17.7005rem;
+    transform: rotate(-36.156deg);
+    border-radius: 17.97775rem;
+    background: rgba(12, 56, 98, 0.5);
+    filter: blur(150px);
+  }
+  .Ellipse2 {
+    border-radius: 20.65625rem;
+    background: rgba(12, 56, 98, 0.5);
+    filter: blur(150px);
+    width: 20.65625rem;
+    height: 19.55006rem;
+    transform: rotate(-36.156deg);
+  }
+  .Ellipse5 {
+    width: 12.32638rem;
+    height: 25.20706rem;
+    transform: rotate(89.386deg);
+    border-radius: 25.20706rem;
+    background: rgba(99, 63, 211, 0.15);
+    filter: blur(150px);
+  }
 }
 @media only screen and (max-width: 767px) {
   .btn {
@@ -315,6 +339,30 @@ body {
       rgba(212, 68, 236, 0.03) 100%
     );
     filter: blur(50px);
+  }
+  .Ellipse3 {
+    width: 9.97775rem;
+    height: 9.7005rem;
+    transform: rotate(-36.156deg);
+    border-radius: 10.97775rem;
+    background: rgba(12, 56, 98, 0.5);
+    filter: blur(150px);
+  }
+  .Ellipse2 {
+    border-radius: 20.65625rem;
+    background: rgba(12, 56, 98, 0.5);
+    filter: blur(150px);
+    width: 10.65625rem;
+    height: 9.55006rem;
+    transform: rotate(-36.156deg);
+  }
+  .Ellipse5 {
+    width: 6.32638rem;
+    height: 12.20706rem;
+    transform: rotate(89.386deg);
+    border-radius: 25.20706rem;
+    background: rgba(99, 63, 211, 0.15);
+    filter: blur(150px);
   }
 }
 

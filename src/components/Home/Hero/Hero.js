@@ -81,6 +81,9 @@ const Hero = () => {
                 <image
                   x="0"
                   y="0"
+                  data-src="lazy-image.jpg"
+                  alt="Lazy Loaded Image"
+                  loading="lazy"
                   width="100%"
                   height="100%"
                   clipPath="url(#shape)"
@@ -130,10 +133,22 @@ const Hero = () => {
               </svg>
 
               <div className="absolute top-[2rem] right-[23rem]">
-                <img src={Ellipse5} alt="" className=" Ellipse2" />
+                <img
+                  src={Ellipse5}
+                  data-src="lazy-image.jpg"
+                  alt="Lazy Loaded Image"
+                  loading="lazy"
+                  className=" Ellipse2"
+                />
               </div>
               <div className="absolute top-[7rem] left-[17rem]">
-                <img src={Ellipse7} alt="" className="Ellipse3" />
+                <img
+                  src={Ellipse7}
+                  data-src="lazy-image.jpg"
+                  alt="Lazy Loaded Image"
+                  loading="lazy"
+                  className="Ellipse3"
+                />
               </div>
             </div>
             {/* <div className="md:flex hidden flex-col relative justify-center mt-5 md:-mt-5 items-center">
@@ -196,7 +211,9 @@ const Hero = () => {
             <div className="relative">
               <img
                 src={Ellipse4}
-                alt=""
+                data-src="lazy-image.jpg"
+                alt="Lazy Loaded Image"
+                loading="lazy"
                 className="absolute -top-[18rem] right-5 Ellipse4"
               />
             </div>
@@ -211,7 +228,9 @@ const Hero = () => {
               {/* <div className="w-[40rem] h-12  shadow-xl shadow-[#C979CF]/50 "> */}
               <img
                 src={Spotlight}
-                alt=""
+                data-src="lazy-image.jpg"
+                alt="Lazy Loaded Image"
+                loading="lazy"
                 className="object-cover mt-[3.5rem] md:mt-[5.19rem]"
               />
               <Lamp />

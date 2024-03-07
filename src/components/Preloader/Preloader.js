@@ -21,7 +21,7 @@ const Preloader = () => {
       .to(".preloader", {
         duration: 1,
         y: "-100%",
-        delay: 7,
+        delay: 5,
       })
 
       .to(".preloader", {

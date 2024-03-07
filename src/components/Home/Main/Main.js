@@ -8,7 +8,7 @@ const Main = (props) => {
   console.log("items", props.item);
   return (
     <>
-      <section className="bg-[#040013] h-[126rem] pt-10 lg:pt-20">
+      <section className="bg-[#040013] h-[126rem] md:h-full pt-10 lg:pt-20">
         <div className="md:max-w-[45rem] max-w-[21.5rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto grid grid-cols-1 gap-[2.5rem] md:grid-cols-2 place-items-center md:gap-[2.5rem] lg:gap-[3.63rem] xl:gap-[6.62rem] md:pb-[4.37rem] lg:pb-[6.37rem]">
           {props.item?.slice(0, 4).map((items, index) => (
             <Card
@@ -20,10 +20,16 @@ const Main = (props) => {
               href={items.Link}
             >
               <div>
-                <img src={Ellipsep} alt="" className="project object-cover" />
+                <img
+                  src={Ellipsep}
+                  data-src="lazy-image.jpg"
+                  alt="Lazy Loaded Image"
+                  loading="lazy"
+                  className="project object-cover Ellipse5 "
+                />
               </div>
 
-              <div className="-mt-[250px]  lg:-mt-[310px]">
+              <div className="-mt-[250px]  lg:-mt-[400px]">
                 <div className="flex justify-between pt-[3.37rem] pb-[3.73rem] px-4 md:px-5 lg:px-10">
                   <p className="text-white text-[0.58744rem] md:text-base lg:text-[1.125rem] font-medium">
                     {items.design}
@@ -48,7 +54,9 @@ const Main = (props) => {
                 <div className="px-5 flex justify-center">
                   <img
                     src={items.img}
-                    alt=""
+                    data-src="lazy-image.jpg"
+                    alt="Lazy Loaded Image"
+                    loading="lazy"
                     className={`object-contain ${
                       index === props.item.length - 1
                         ? "xl:w-[35.78844rem]"

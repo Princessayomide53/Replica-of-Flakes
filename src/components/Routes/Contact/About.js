@@ -24,23 +24,31 @@ const About = () => {
             Hi, my name is Folake Florence and I love things that move
           </h2>
           <div className="absolute left-1/2 top-16 z-20">
-            <img src={Ellipse8} alt="" className="Ellipse5" />
+            <img
+              src={Ellipse8}
+              data-src="lazy-image.jpg"
+              alt="Lazy Loaded Image"
+              loading="lazy"
+              className="Ellipse5"
+            />
           </div>
           <div className="flex flex-col md:flex-row  md:justify-center max-w-[21.5rem] md:max-w-[43rem] lg:max-w-[65rem] xl:max-w-[73rem] mx-auto gap-0 md:gap-[2rem] lg:gap-[2rem] pt-[2.5rem] md:pt-[5rem]">
             <img
               src={G1}
-              alt=""
+              data-src="lazy-image.jpg"
+              alt="Lazy Loaded Image"
+              loading="lazy"
               className="lg:w-[56.5rem] w-[20.8445rem] h-[19.07269rem]  xl:w-[63rem] md:w-[43rem] md:h-[28.375rem] lg:h-[39.375rem] object-cover rounded-md"
             />
             {/* <span className="flex md:flex md:flex-col md:gap-[2.5rem] pt-[1.5rem] md:pt-0 gap-[1.1rem]">
               <img
                 src={G2}
-                alt=""
+                data-src="lazy-image.jpg" alt="Lazy Loaded Image" loading="lazy"
                 className="w-[9.92925rem] h-[9.8675rem] md:w-full md:h-[13rem] lg:w-[20rem] lg:h-[18.5rem]"
               />
               <img
                 src={G3}
-                alt=""
+                data-src="lazy-image.jpg" alt="Lazy Loaded Image" loading="lazy"
                 className="w-[9.92925rem] h-[9.8675rem] md:w-full md:h-[13rem] lg:w-[20rem] lg:h-[18.5rem]"
               />
             </span> */}
@@ -106,7 +114,9 @@ const About = () => {
             </div>
             <img
               src={G4}
-              alt=""
+              data-src="lazy-image.jpg"
+              alt="Lazy Loaded Image"
+              loading="lazy"
               className="md:w-[22rem] md:h-[25.5rem] md:pt-[2rem] lg:w-[28rem] lg:h-[29rem]"
             />
           </div>

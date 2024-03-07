@@ -47,10 +47,16 @@ const Projects = (props) => {
               href={item.Link}
             >
               <div>
-                <img src={Ellipsep} alt="" className="project object-cover" />
+                <img
+                  src={Ellipsep}
+                  data-src="lazy-image.jpg"
+                  alt="Lazy Loaded Image"
+                  loading="lazy"
+                  className="project object-cover Ellipse5 "
+                />
               </div>
 
-              <div className="-mt-[250px]  lg:-mt-[310px]">
+              <div className="-mt-[250px]  lg:-mt-[400px]">
                 <div className="flex justify-between pt-[3.37rem] pb-[3.73rem] px-4 md:px-5 lg:px-10">
                   <p className="text-white text-[0.58744rem] md:text-base lg:text-[1.125rem] font-medium">
                     {item.design}
