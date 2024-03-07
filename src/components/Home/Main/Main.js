@@ -8,7 +8,7 @@ const Main = (props) => {
   console.log("items", props.item);
   return (
     <>
-      <section className="bg-[#040013] h-full lg:pt-20">
+      <section className="bg-[#040013] h-full pt-12 lg:pt-20">
         <div className="md:max-w-[45rem] max-w-[21.5rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto grid grid-cols-1 gap-[2.5rem] md:grid-cols-2 place-items-center md:gap-[2.5rem] lg:gap-[3.63rem] xl:gap-[6.62rem] md:pb-[4.37rem] lg:pb-[6.37rem]">
           {props.item?.slice(0, 4).map((items, index) => (
             <Card
