@@ -51,7 +51,7 @@ const NavBar = () => {
 
                 <ul
                   className={`bg-[#040013] ${nav ? "slide-in" : "right-[100%]"}
-                 dropdown  w-[100%] px-[2.35rem] py-[1.5rem] h-[30.3125rem] flex flex-col  absolute right-0 -top-5 z-50`}
+                 dropdown  w-[100%] px-[2.35rem] pl-[4.5rem] py-[1.5rem] h-[30.3125rem] flex flex-col  absolute right-0 -top-5 z-50`}
                 >
                   <div onClick={handleClose} className="flex justify-end">
                     <AiOutlineClose className="text-2xl text-white" />
