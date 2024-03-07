@@ -17,7 +17,7 @@ const About = () => {
 
   return (
     <>
-      <section className="overflow-hidden bg-[#040013] h-[158rem] md:h-[165rem] lg:h-[177.625rem] xl:h-[180.625rem] ">
+      <section className="overflow-hidden bg-[#040013] h-[148rem] md:h-[165rem] lg:h-[177.625rem] xl:h-[180.625rem] ">
         <NavBar />
         <div className="pt-[7.95rem] md:pt-[15.75rem] relative">
           <h2 className="text-white text-center text-[1.25rem] px-7 md:px-0 md:text-[2.2rem] leading-normal xl:text-[2.5rem] font-medium md:leading-[2.5rem] tracking-[0.0125rem]">
