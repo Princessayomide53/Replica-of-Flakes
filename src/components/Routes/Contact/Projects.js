@@ -56,8 +56,8 @@ const Projects = (props) => {
                 />
               </div>
 
-              <div className="-mt-[250px]  lg:-mt-[400px]">
-                <div className="flex justify-between pt-[3.37rem] pb-[3.73rem] px-4 md:px-5 lg:px-10">
+              <div className="-mt-[240px]  lg:-mt-[400px]">
+                <div className="flex justify-between lg:pt-[3.37rem] pt-[4.37rem] pb-[3.73rem] px-4 md:px-5 lg:px-10">
                   <p className="text-white text-[0.58744rem] md:text-base lg:text-[1.125rem] font-medium">
                     {item.design}
                   </p>

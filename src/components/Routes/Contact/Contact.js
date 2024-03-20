@@ -34,7 +34,7 @@ const Contact = () => {
         publicKey: "YrOhRfVlX9wAQicYi",
       })
       .then((result) => {
-        toast.success("Successfully toasted!");
+        toast.success("Email Successfully Sent");
         console.log("SUCCESS!");
 
         // Clear form fields after successful submission

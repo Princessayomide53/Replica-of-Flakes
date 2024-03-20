@@ -5,19 +5,21 @@ import Data from "./Main/Data";
 import NavBar from "./NavBar/NavBar";
 import transitions from "./transitions";
 
-const Home = () => {
+const Home = (props) => {
   useEffect(() => {
+    // props.onHomeClick();
     window.scrollTo(0, 0);
+
     return () => {};
   }, []);
 
   return (
-    <>
+    <div className="">
       <NavBar />
       <Hero />
       <Data />
       <Connect />
-    </>
+    </div>
   );
 };
 

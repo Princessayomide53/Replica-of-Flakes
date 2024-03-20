@@ -5,6 +5,7 @@ import { gsap, Power3 } from "gsap";
 import { TweenMax } from "gsap/gsap-core";
 
 const Preloader = () => {
+  // const [preloaderLoaded, setPreloaderLoaded] = useState(false);
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
 
